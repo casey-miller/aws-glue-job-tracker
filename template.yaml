@@ -103,6 +103,7 @@ Resources:
         Type: AWS::SES::EmailIdentity
         Properties:
             EmailIdentity: !Ref GlueJobNotifications
+        DeletionPolicy: Retain
     GlueDynamoDBTable:
         Type: AWS::DynamoDB::Table
         Properties:
